@@ -1,9 +1,135 @@
-<mxfile host="app.diagrams.net" modified="2024-02-27T05:19:19.414Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="23.1.7" etag="Uu7aDb6fSoD7tnYwlnWA" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-11T06:07:00.208Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="AmYHp3mVvpcHktbIqFqf" version="24.0.4" type="github">
   <diagram name="第 1 页" id="hfluHzG-TYxE_x7D1qcY">
-    <mxGraphModel>
+    <mxGraphModel dx="2390" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-1" value="SlbGroupBase" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-2" value="SlbGroupAddConfigMsg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-1">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-3" value="SlbGroupRefreshVmConfigMsg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-1">
+          <mxGeometry y="52" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-4" value="APIChangeSlbGroupMonitorIpsMsg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-1">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-5" value="APIChangeSlbGroupDeployTypeMsg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-1">
+          <mxGeometry y="104" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-6" value="SlbGroupConfigBase" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-7" value="refreshLb" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-6">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-8" value="refreshSlbInstanceOnStart" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-6">
+          <mxGeometry y="52" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-9" value="refreshKeepalived" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-6">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-11" value="SlbVm" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="110" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-14" value="APIProvisionSlbInstanceMsg" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-11">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-12" value="SlbVmInstanceRefreshBackendMessage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-11">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-13" value="SlbVmInstanceUpdateMessage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-11">
+          <mxGeometry y="78" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-15" value="SlbVmInstanceRefreshKeepalivedMessage" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-11">
+          <mxGeometry y="104" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-16" value="SlbGroupBackend" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="120" width="220" height="286" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-17" target="cyxen19gM1Nl3GTO7q-8-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-17" value="addVmNics" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-18" target="cyxen19gM1Nl3GTO7q-8-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-18" value="removeVmNic" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="52" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-19" target="cyxen19gM1Nl3GTO7q-8-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-19" value="addListener" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-20" y="117" />
+              <mxPoint x="-20" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-20" value="removeListener" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="104" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-21" target="cyxen19gM1Nl3GTO7q-8-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-21" value="destroyLoadBalancer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="130" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-20" y="169" />
+              <mxPoint x="-20" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-22" value="refresh" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="156" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-20" y="195" />
+              <mxPoint x="-20" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-23" value="detachVipFromLoadBalancer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="182" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="cyxen19gM1Nl3GTO7q-8-16" source="cyxen19gM1Nl3GTO7q-8-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-20" y="221" />
+              <mxPoint x="-20" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-24" value="attachVipToLoadBalancer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="208" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-25" value="&amp;nbsp; &amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="234" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-26" value="slbGroupRefresh" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cyxen19gM1Nl3GTO7q-8-16">
+          <mxGeometry y="260" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cyxen19gM1Nl3GTO7q-8-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="cyxen19gM1Nl3GTO7q-8-26" target="cyxen19gM1Nl3GTO7q-8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
